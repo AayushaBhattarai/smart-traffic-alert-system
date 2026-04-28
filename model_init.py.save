@@ -1,0 +1,32 @@
+f/Users/abhikharel/vehicle-tracking-yolov11/venv/bin/python /Users/abhikharel/vehicle-tracking-yolov11/model_init.py
+rom ultralytics import YOLO
+import torch
+
+def initialize_yolov11(
+    model_path="yolo11n.pt",
+    conf_threshold=0.4,
+    iou_threshold=0.5
+):
+    """
+    Initialize YOLOv11 model with pretrained weights
+    """
+
+    # Select device
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"[INFO] Using device: {device}")
+
+    # Load YOLOv11 model
+    model = YOLO(model_path)
+
+    # Set inference thresholds
+    model.conf = conf_threshold
+    model.iou = iou_threshold
+
+    print("[INFO] YOLOv11 model initialized successfully")
+
+    return model
+
+
+if __name__ == "__main__":
+    initialize_yolov11()
+A

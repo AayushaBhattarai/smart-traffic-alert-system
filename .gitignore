@@ -1,0 +1,18 @@
+venv/
+__pycache__/
+*.pyc
+
+# models
+*.pt
+
+# videos
+*.mp4
+*.MOV
+data/videos/
+
+# large datasets
+images.zip
+runs/
+snapshots/
+
+.DS_Store
