@@ -30,7 +30,7 @@ It detects, tracks, and analyzes vehicles from video streams and generates alert
 
 ## 🎥 Demo
 
-👉 Add your demo video link here (Google Drive / YouTube)
+https://drive.google.com/file/d/1c2A1LjZ6_jlOpNCKkOIf183f-wT2a-HM/view?usp=sharing
 
 ## 📂 Project Structure
 
